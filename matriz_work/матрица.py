@@ -34,6 +34,46 @@ for j in range(3):
 
     
 print(sum)
+
+for i in range(5):
+    m[0][i],m[2][i]= m[2][i],m[0][i]
+
+
+for i in range(k):
+    print(m[i])
+
+print(1)
+
+m = []
+n , k = 5, 5
+for i in range(k):
+    m.append([0]*n)
+for i in range(n):
+    for j in range(k):
+        m[j][i] = randint(20,80)
+for i in range(k):
+    print(m[i])
+sum=0
+
+for i in range(5):
+    sum+=m[i][i]
+
+print(sum)
+
+
+
+
+
+
+sum=0
+
+for i in range(5):
+    sum+=m[i][5 - i - 1]
+
+print(sum)
+
+
+    
     
     
     
